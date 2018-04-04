@@ -12,7 +12,7 @@
               <ul class="nav justify-content-center">
                   <li class="nav-item"><a class="nav-link">Home</a></li>
                   <li class="nav-item"><a class="nav-link">About</a></li>
-                  <li class="nav-item"><a class="nav-link">Contact Us</a></li>
+                  <li class="nav-item"><a class="nav-link">Contact us</a></li>
               </ul>
           </nav>
         </Footer>
@@ -31,6 +31,8 @@ import CardBack from './components/card/CardBack'
 import Footer from './components/Footer'
 
 
+
+
 export default {
   data: function(){
     return{
@@ -44,8 +46,7 @@ export default {
     CardFront,
     CardInsideLeft,
     CardInsideRight,
-    CardBack,
-    Footer
+    CardBack
   }
 }
 </script>
