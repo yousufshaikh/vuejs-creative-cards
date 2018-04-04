@@ -47,7 +47,7 @@ export default {
 }
 body{
   color: #333;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+  font-family:"Arial, Helvetica, sans-serif";
   height: 1100px;
 }
 </style>
