@@ -8,13 +8,13 @@
         </keep-alive>
         <Footer>
           <p class="text-center footer-heading" slot="app-name">&copy; {{appName}}</p>
-          <nav>
+          <!-- <nav>
               <ul class="nav justify-content-center">
                   <li class="nav-item"><a class="nav-link">Home</a></li>
                   <li class="nav-item"><a class="nav-link">About</a></li>
                   <li class="nav-item"><a class="nav-link">Contact us</a></li>
               </ul>
-          </nav>
+          </nav> -->
         </Footer>
       </div>
     </div>
