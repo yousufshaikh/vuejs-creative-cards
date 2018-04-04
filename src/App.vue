@@ -23,15 +23,13 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld'
+import FirebaseConfig from './firebaseConfig.js'
 import Header from './components/Header'
 import CardFront from './components/card/CardFront'
 import CardInsideLeft from './components/card/CardInsideLeft'
 import CardInsideRight from './components/card/CardInsideRight'
 import CardBack from './components/card/CardBack'
 import Footer from './components/Footer'
-
-
-
 
 export default {
   data: function(){
