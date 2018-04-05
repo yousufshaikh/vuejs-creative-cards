@@ -2,6 +2,8 @@
     <div class="row">
         <div class="col-sm-6 card card-input" >
             <TextInputArea @displayTextOutput = 'inputAreaOne = $event'/>
+            <ImageUpload/>
+            <hr>
             <TextInputArea @displayTextOutput = 'inputAreaTwo = $event'/>
             <TextInputArea @displayTextOutput = 'inputAreaThree = $event'/>
         </div>
@@ -16,6 +18,7 @@
 <script>
 import TextInputArea from './TextInputArea'
 import TextOutputArea from './TextOutputArea'
+import ImageUpload from './ImageUpload'
 
 export default{
     data: function(){
@@ -27,7 +30,8 @@ export default{
     },
     components: {
         TextInputArea,
-        TextOutputArea
+        TextOutputArea,
+        ImageUpload
     }
 }
     
