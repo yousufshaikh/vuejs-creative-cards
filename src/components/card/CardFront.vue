@@ -1,5 +1,5 @@
 <template>
-    <div class="row">
+    <div class="row extra-margin">
         <div class="col-sm-6 card card-input" >
             <TextInputArea @displayTextOutput = 'inputAreaOne = $event'/>
             <ImageUpload @displayImageName = 'imageName = $event'/>
@@ -51,4 +51,6 @@ export default{
     height: 800px;
     padding: 20px;
 }
+
+
 </style>

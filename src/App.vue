@@ -51,7 +51,7 @@ export default {
 
 <style>
 #app {
-  font-family: "Avenir, Helvetica, Arial, sans-serif";
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -60,10 +60,13 @@ export default {
 }
 body{
   color: #333;
-  font-family:"Arial, Helvetica, sans-serif"; 
+  font-family:"Arial", Helvetica, sans-serif; 
   height: 1100px;
 }
 .footer-heading{
   margin-top: 20px;
+}
+.extra-margin{
+  margin-top: 30px;
 }
 </style>

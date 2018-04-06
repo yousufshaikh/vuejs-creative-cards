@@ -1,6 +1,7 @@
 <template>
-    <div class="img-container" :style="styleObj">
+    <div class="img-container" :style="styleObj" @mouseover="showOptions=true" @mouseleave="showOptions=false">
         <img id="outputImage">{{displayImage}}
+        <!-- <button class="btn btn-outline-danger btn-sm" v-show="showOptions">Remove Image</button> -->
     </div>
 </template>
 
@@ -16,12 +17,18 @@ import Firebase from 'firebase'
                 default: 200
             }
         },
+        data: function(){
+            return{
+                showOptions: false
+            }
+        },
         watch:{
             displayImage: function(){
                 var storageRef = Firebase.storage().ref("user_uploads/" + this.displayImage);
                 storageRef.getDownloadURL().then(function(url){
                     var img = document.getElementById('outputImage')
                     img.src = url
+                    setDragable()
                 })
             }
         },
@@ -33,6 +40,9 @@ import Firebase from 'firebase'
             }
         }
     }
+    function setDragable() {
+        $('#outputImage').draggable();
+    }
 </script>
 
 <style scoped>
@@ -40,5 +50,8 @@ import Firebase from 'firebase'
     border: 1px dotted gray;
     overflow: hidden;
     margin: 5px 0;
+}
+img{
+    width: 130%;
 }
 </style>
